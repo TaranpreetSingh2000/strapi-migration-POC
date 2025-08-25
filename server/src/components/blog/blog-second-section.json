@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blog_blog_second_sections",
+  "info": {
+    "displayName": "Blog second section"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeading": {
+      "type": "string"
+    },
+    "richtextContent": {
+      "type": "blocks"
+    },
+    "accordionView": {
+      "type": "enumeration",
+      "default": "column",
+      "enum": [
+        "column",
+        "grid"
+      ]
+    },
+    "faqSection": {
+      "type": "component",
+      "component": "accordion.accordion",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

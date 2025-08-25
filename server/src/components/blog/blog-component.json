@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_blog_blog_components",
+  "info": {
+    "displayName": "Blog component first section"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeading": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "teaserView": {
+      "type": "enumeration",
+      "default": "right",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "richtextContent": {
+      "type": "blocks"
+    },
+    "tableRichtextContent": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

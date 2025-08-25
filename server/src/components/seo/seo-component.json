@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_seo_seo_components",
+  "info": {
+    "displayName": "SEO component"
+  },
+  "options": {},
+  "attributes": {
+    "browserTitle": {
+      "type": "text"
+    },
+    "pageTitle": {
+      "type": "text"
+    },
+    "displayTitle": {
+      "type": "text"
+    },
+    "metaTitle": {
+      "type": "text"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "metaKeywords": {
+      "type": "text"
+    },
+    "ogMedia": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

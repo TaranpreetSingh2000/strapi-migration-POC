@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_detail_pages",
+  "info": {
+    "singularName": "blog-detail-page",
+    "pluralName": "blog-detail-pages",
+    "displayName": "Blog Detail Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slugTitle": {
+      "type": "string"
+    },
+    "slugURL": {
+      "type": "uid",
+      "targetField": "slugTitle"
+    },
+    "blogDetailSection": {
+      "type": "component",
+      "component": "blog.main-blog-detail-page",
+      "repeatable": false
+    },
+    "seoSection": {
+      "type": "component",
+      "component": "seo.seo-component",
+      "repeatable": false
+    }
+  }
+}

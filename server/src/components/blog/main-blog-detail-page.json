@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_blog_main_blog_detail_pages",
+  "info": {
+    "displayName": "Main Blog Detail page"
+  },
+  "options": {},
+  "attributes": {
+    "blogPostedTime": {
+      "type": "date"
+    },
+    "blogUpdatedTime": {
+      "type": "date"
+    },
+    "blogDetailUpperSection": {
+      "type": "component",
+      "component": "blog.blog-component",
+      "repeatable": false
+    },
+    "blogDetailConclusionSection": {
+      "type": "component",
+      "component": "blog.blog-second-section",
+      "repeatable": false
+    },
+    "disclaimerSectionHeading": {
+      "type": "string"
+    },
+    "disclaimerText": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
