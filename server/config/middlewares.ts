@@ -20,7 +20,7 @@ export default [
       origin: [
         "http://localhost:1339",
         "http://localhost:443",
-        "https://8cb36da85977.ngrok-free.app", // your ngrok domain
+        "https://9a30ed0847a5.ngrok-free.app ", // your ngrok domain
       ],
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       headers: ["Content-Type", "Authorization", "Origin", "Accept"],

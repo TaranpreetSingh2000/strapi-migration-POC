@@ -1,14 +1,14 @@
 "use strict";
 const fs = require("fs");
-const path = require("path");
+var path = require("path");
 
 module.exports = {
   init(config) {
-    // ✅ Use Strapi’s public dir (works in dev + prod)
-    const uploadDir = path.join(
-      strapi.dirs.static.public,
-      "images"
-    );
+
+    console.log(process.env.UPLOAD_PATH)
+    // ✅ configurable upload dir via ENV
+    const uploadDir =
+      process.env.UPLOAD_PATH || path.join(strapi.dirs.static.public, "images");
 
     // ensure folder exists
     if (!fs.existsSync(uploadDir)) {
@@ -22,7 +22,14 @@ module.exports = {
 
         await fs.promises.writeFile(filePath, buffer);
 
-        file.url = `/images/${name}`;
+        // ✅ File URL (public vs custom path)
+        if (process.env.UPLOAD_URL_BASE) {
+          // if you expose files via nginx or a CDN
+          file.url = `${process.env.UPLOAD_URL_BASE}/${name}`;
+        } else {
+          // default: serve from strapi public
+          file.url = `/images/${name}`;
+        }
       },
 
       async delete(file) {

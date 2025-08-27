@@ -4,5 +4,5 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  url: "https://8cb36da85977.ngrok-free.app", 
+  url: "https://9a30ed0847a5.ngrok-free.app ", 
 });
