@@ -1,5 +1,5 @@
 import path from "path";
-
+ 
 export default () => ({
   upload: {
     config: {
@@ -8,3 +8,4 @@ export default () => ({
     },
   },
 });
+ 
