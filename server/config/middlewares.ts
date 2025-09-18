@@ -2,17 +2,17 @@ export default [
   "strapi::errors",
   {
     name: "strapi::security",
-    config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          "connect-src": ["'self'", "https:", "http:"],
-          "img-src": ["'self'", "data:", "blob:", "8cb36da85977.ngrok-free.app"],
-          "media-src": ["'self'", "data:", "blob:", "8cb36da85977.ngrok-free.app"],
-          upgradeInsecureRequests: null,
-        },
-      },
-    },
+    // config: {
+    //   contentSecurityPolicy: {
+    //     useDefaults: true,
+    //     directives: {
+    //       "connect-src": ["'self'", "https:", "http:"],
+    //       "img-src": ["'self'", "data:", "blob:", "53fece096739.ngrok-free.app"],
+    //       "media-src": ["'self'", "data:", "blob:", " 53fece096739.ngrok-free.app"],
+    //       upgradeInsecureRequests: null,
+    //     },
+    //   },
+    // },
   },
   {
     name: "strapi::cors",
@@ -20,7 +20,7 @@ export default [
       origin: [
         "http://localhost:1339",
         "http://localhost:443",
-        "https://9a30ed0847a5.ngrok-free.app ", // your ngrok domain
+        // " https://53fece096739.ngrok-free.app ", // your ngrok domain
       ],
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       headers: ["Content-Type", "Authorization", "Origin", "Accept"],
